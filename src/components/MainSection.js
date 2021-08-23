@@ -32,7 +32,6 @@ const MainSection = () => {
     border-radius: 2%;
     display: flex;
     align-items: center;
-    /* border: 0.5px solid #ffffff; */
     z-index: 2;
   `;
 
