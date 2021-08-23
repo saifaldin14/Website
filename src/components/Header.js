@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "@material-ui/core/Button";
+import { StylesProvider } from "@material-ui/core/styles";
 
 const Header = () => {
   const StyledHeader = styled.div`
@@ -44,7 +45,9 @@ const Header = () => {
         <StyledLogo src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Blue_Square.svg/781px-Blue_Square.svg.png" />
         <StyledText>Laurier Computing Society</StyledText>
       </StyledTitle>
-      <StyledButton>Join our Discord</StyledButton>
+      <StylesProvider injectFirst>
+        <StyledButton>Join our Discord</StyledButton>
+      </StylesProvider>
     </StyledHeader>
   );
 };

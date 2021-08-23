@@ -1,21 +1,23 @@
-import React from 'react';
-import Styled from 'styled-components';
-import Header from './components/Header';
-import { StylesProvider } from "@material-ui/core/styles";
-import MainSection from './components/MainSection';
+import React from "react";
+import styled from "styled-components";
+import Header from "./components/Header";
+import MainSection from "./components/MainSection";
+import FaqSection from "./components/FAQ";
 
 const LandingPage = () => {
-    const StyledPage = Styled.div`
-        background-color: #000000;
-    `;
-    return (
-        <StylesProvider injectFirst>
-            <StyledPage>
-                <Header />
-                <MainSection />
-            </StyledPage>
-        </StylesProvider>
-    );
-}
+  const StyledPage = styled.div`
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  `;
+  return (
+    <StyledPage>
+      <Header />
+      <MainSection />
+      <FaqSection />
+    </StyledPage>
+  );
+};
 
 export default LandingPage;

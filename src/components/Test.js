@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "@material-ui/core/Button";
-import { StylesProvider } from "@material-ui/core/styles";
-import FaqSection from "./FAQ";
 import join from "../assets/join.png";
 import window from "../assets/window.svg";
 
-const MainSection = () => {
+const Test = () => {
   const BackGroundDivLeft = styled.div`
     width: 50%;
     position: absolute;
@@ -24,8 +22,8 @@ const MainSection = () => {
   const StyleContainer = styled.div`
     background-color: black;
     background: url(${window});
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     position: absolute;
     top: 25%;
     left: 10%;
@@ -75,14 +73,11 @@ const MainSection = () => {
             Join our Discord for our official announcements about the school
             year, as well as stay up-to-date on all things LCS
           </StyledP>
-          <StylesProvider injectFirst>
-            <StyledButton>Discord</StyledButton>
-          </StylesProvider>
+          <StyledButton>Discord</StyledButton>
         </ContentContainer>
       </StyleContainer>
-      <FaqSection />
     </div>
   );
 };
 
-export default MainSection;
+export default Test;
