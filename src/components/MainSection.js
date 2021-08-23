@@ -24,8 +24,8 @@ const MainSection = () => {
   const StyleContainer = styled.div`
     background-color: black;
     background: url(${window});
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     position: absolute;
     top: 25%;
     left: 10%;
