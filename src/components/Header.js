@@ -7,25 +7,25 @@ const Header = () => {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000000;
   `;
 
   const StyledTitle = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-left: 2rem;
     padding: 0.5rem;
   `;
 
   const StyledLogo = styled.img`
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     padding-right: 0.5rem;
   `;
 
   const StyledText = styled.h2`
     color: #ffffff;
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Comfortaa";
   `;
 
