@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "@material-ui/core/Button";
 import join from "../assets/join.png";
+import window from "../assets/window.svg";
 
 const MainSection = () => {
   const BackGroundDivLeft = styled.div`
@@ -20,49 +21,21 @@ const MainSection = () => {
   `;
   const StyleContainer = styled.div`
     background-color: black;
+    background: url(${window});
     width: 50%;
     height: 50%;
     position: absolute;
     top: 25%;
     left: 10%;
-    border-radius: 3%;
-    border: 0.5px solid #ffffff;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    /* border: 0.5px solid #ffffff; */
     z-index: 2;
   `;
-  const ContainerHeader = styled.div`
-    height: 8%;
-    display: flex;
-    align-items: center;
-  `;
-  const ContainerHeaderButtonDiv = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 10%;
-    margin: 1%;
-  `;
-  const RedButton = styled.div`
-    background-color: red;
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 50%;
-  `;
-  const YellowButton = styled.div`
-    background-color: yellow;
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 50%;
-  `;
-  const GreenButton = styled.div`
-    background-color: green;
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 50%;
-  `;
+
   const ContentContainer = styled.div`
-    height: 92%;
-    background-color: #2c3844;
+    background-color: #282828;
     border-bottom-left-radius: 4%;
     border-bottom-right-radius: 4%;
     display: flex;
@@ -94,13 +67,6 @@ const MainSection = () => {
       <BackGroundDivLeft />
       <BackGroundDivRight />
       <StyleContainer>
-        <ContainerHeader>
-          <ContainerHeaderButtonDiv>
-            <RedButton />
-            <YellowButton />
-            <GreenButton />
-          </ContainerHeaderButtonDiv>
-        </ContainerHeader>
         <ContentContainer>
           <StyledH1>Interested in joining the Club?</StyledH1>
           <StyledP>
